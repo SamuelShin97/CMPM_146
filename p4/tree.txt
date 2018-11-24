@@ -1,0 +1,18 @@
+Selector: High Level Ordering of Strategies
+| Sequence: Counter Strategy
+| | Check: fleet_to_counter
+| | Action: counter_enemy
+| | Sequence: Reinforce Counter
+| | | Sequence: Offensive Strategy
+| | | | Check: close_takeable_planet
+| | | | Action: attack
+| | | Sequence: Spread Strategy
+| | | | Check: if_neutral_planet_available
+| | | | Action: spread
+| Sequence: Offensive Strategy
+| | Check: close_takeable_planet
+| | Action: attack
+| Sequence: Spread Strategy
+| | Check: if_neutral_planet_available
+| | Action: spread
+| Action: attack

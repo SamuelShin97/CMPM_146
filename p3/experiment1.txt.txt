@@ -1,0 +1,10 @@
+Scores:
+25 vs fixed: 0-100 0-100 0-100
+50 vs fixed: 0-100 0-100 0-100
+200 vs fixed: 100 draws 100 draws, 100 draws
+1000 vs fixed: 100-0 100-0 100-0
+
+Experiment 1:
+
+
+The greater the number of nodes the vanilla MCTS is allowed to expand, the better the MCTS performs. As the number of allowed nodes increases, the information that MCTS can use to play grows and, therefore, it is able to make better decisions. For example, MCTS using 25 and 50 nodes resulted in all losses against the fixed MCTS of 100 nodes. 200 nodes outputted 300 ties with the 100 nodes and 1000 nodes yielded 300 wins against the 100 nodes. The more nodes the algorithm gets to expand upon, the more options and possibilities open up for the MCTS to search for an optimal play. 
